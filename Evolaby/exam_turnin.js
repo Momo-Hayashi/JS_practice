@@ -6,7 +6,7 @@ function removeSpaces(str) {
   return str;
 }
 
-removeSpaces(" a bc  def  ")
+removeSpaces(" a bc  def  ");
 
 
 // 2. Convert underscore naming convention into camel --------------------------
@@ -14,10 +14,10 @@ function snakeToCamel(snakeCase){
   snakeCase = snakeCase.replace(/_./g, function(s) {
     return s[1].toUpperCase();
   });
-  return snakeCase
+  return snakeCase;
 };
 
-snakeToCamel("local_host_time")
+snakeToCamel("local_host_time");
 
 
 // 3. Convert numbers to currency ----------------------------------------------
@@ -55,7 +55,7 @@ function countAndSay(str) {
 function decode(str) {
   let result = [];
   const array = str.split("");
-  for(let w = 0; w < array.length; w = w + 2 ){
+  for(let w = 0; w < array.length; w += 2 ){
     if (isNaN(array[w+1]) === false) {
       number = [];
       number.push(array[w], array[w+1]);
