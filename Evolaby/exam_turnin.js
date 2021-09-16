@@ -24,7 +24,7 @@ snakeToCamel("local_host_time")
 function convert(amount) {
   amount = amount.toLocaleString('en-US', {
     style: 'currency',
-    currency: 'USD';
+    currency: 'USD'
   });
   return amount;
 }
